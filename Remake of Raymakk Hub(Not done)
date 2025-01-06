@@ -320,6 +320,139 @@ local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 end)
 
+local Tab = Window:NewTab("Frozen Soul")
+local Section = Tab:NewSection("Skills")
+Section:NewButton("Permafrost", "Stopming with ice", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://100558589307006"
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
+Section:NewButton("Frost Forge", "PHEW", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://137561511768861"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
+Section:NewButton("Freezing path", "WEEE", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://112620365240235"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+wait(0.75)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+
+wait(0.85)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+
+wait(0.15)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
+
+wait(2)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+Section:NewButton("Freezing Path Hit", "MY FACE", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://112620365240235"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(0.75)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+
+wait(0.6)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+
+playAnim:Stop()
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://108974035701442"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(0.15)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
+
+wait(2)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+wait(3)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+Section:NewButton("Judgement Chain", "10-10-10 FLY KICK", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://75547590335774"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
+Section:NewButton("Ult", "SLASH", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://134494086123052"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
 local Tab = Window:NewTab("Suiryu")
 local Section = Tab:NewSection("Suiryu base")
 Section:NewButton("Bullet Barrage", "Kicks", function()
@@ -772,10 +905,9 @@ wait(2.5)
 playAnim:Stop()
 end)
 
-
-local Tab = Window:NewTab("Frozen Soul")
-local Section = Tab:NewSection("Skills")
-Section:NewButton("Permafrost", "Stopming with ice", function()
+local Tab = Window:NewTab("Garou")
+local Section = Tab:NewSection("Garou base")
+Section:NewButton("Flowing Water miss", "No Touchie :<", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -783,58 +915,23 @@ local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
 local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://100558589307006"
-local playAnim = humanoid:LoadAnimation(anim)
-playAnim:Play()
-end)
-
-Section:NewButton("Frost Forge", "PHEW", function()
-local player = game.Players.LocalPlayer
-repeat wait() until player.Character.Humanoid
-local humanoid = player.Character.Humanoid
-local character = player.Character or player.CharacterAdded:Wait()
-local UserInputService = game:GetService("UserInputService")
-
-local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://137561511768861"
-
-local playAnim = humanoid:LoadAnimation(anim)
-playAnim:Play()
-end)
-
-Section:NewButton("Freezing path", "WEEE", function()
-local player = game.Players.LocalPlayer
-repeat wait() until player.Character.Humanoid
-local humanoid = player.Character.Humanoid
-local character = player.Character or player.CharacterAdded:Wait()
-local UserInputService = game:GetService("UserInputService")
-
-local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://112620365240235"
+anim.AnimationId = "rbxassetid://12272894215"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
-wait(0.75)
+wait(0.25)
 
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
 
-wait(0.85)
-
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
-
-wait(0.15)
-
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
-
-wait(2)
+wait(0.25)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
 
-Section:NewButton("Freezing Path Hit", "MY FACE", function()
+Section:NewButton("Flowing Water", "Touchie :3", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -844,41 +941,156 @@ local UserInputService = game:GetService("UserInputService")
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
 local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://112620365240235"
+anim.AnimationId = "rbxassetid://12272894215"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 
-wait(0.75)
+wait(0.20)
 
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
+
+wait(0.05)
+
+playAnim:Stop()
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://12273188754"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(1.5)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+Section:NewButton("Flowing Water Finisher", "Sleep :3", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://12272894215"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(0.20)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
+
+wait(0.05)
+
+playAnim:Stop()
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://14374357351"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(1.5)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
 wait(0.6)
 
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+Section:NewButton("Lethal Whirlwind Stream miss", "no grabbing", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://12296882427"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
+Section:NewButton("Lethal Whirlwind Stream", "Grab", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://12296882427"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+wait(0.35)
+playAnim:Stop()
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://12296113986"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 3
+
+wait(0.15)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 65
+
+wait(1.35)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+Section:NewButton("Lethal Whirlwind Stream Finisher", "OW MY STOMACH!!!", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://12296882427"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+wait(0.35)
+playAnim:Stop()
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://12296113986"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 3
+
+wait(0.15)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 65
+
+wait(1.15)
+
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
 playAnim:Stop()
 
 local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://108974035701442"
+anim.AnimationId = "rbxassetid://14798608838"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 
-wait(0.15)
-
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 150
-
-wait(2)
-
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
-
-wait(3)
+wait(1.25)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
 
-Section:NewButton("Judgement Chain", "10-10-10 FLY KICK", function()
+Section:NewButton("Hunter's Grasp miss", "Stomp at Nothing", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -886,13 +1098,19 @@ local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
 local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://75547590335774"
+anim.AnimationId = "rbxassetid://12307656616"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+wait(0.5)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
 
-Section:NewButton("Ult", "SLASH", function()
+Section:NewButton("Uppercut", "fly", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -900,7 +1118,7 @@ local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
 local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://134494086123052"
+anim.AnimationId = "rbxassetid://12510170988"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
