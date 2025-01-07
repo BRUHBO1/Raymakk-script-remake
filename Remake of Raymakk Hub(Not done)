@@ -948,9 +948,9 @@ playAnim:Play()
 
 wait(0.20)
 
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
 
-wait(0.05)
+wait(0.25)
 
 playAnim:Stop()
 local anim = Instance.new("Animation")
@@ -981,9 +981,9 @@ playAnim:Play()
 
 wait(0.20)
 
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
 
-wait(0.05)
+wait(0.25)
 
 playAnim:Stop()
 local anim = Instance.new("Animation")
@@ -1027,7 +1027,7 @@ anim.AnimationId = "rbxassetid://12296882427"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
-wait(0.35)
+wait(0.5)
 playAnim:Stop()
 local anim = Instance.new("Animation")
 anim.AnimationId = "rbxassetid://12296113986"
@@ -1058,7 +1058,7 @@ anim.AnimationId = "rbxassetid://12296882427"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
-wait(0.35)
+wait(0.5)
 playAnim:Stop()
 local anim = Instance.new("Animation")
 anim.AnimationId = "rbxassetid://12296113986"
@@ -1072,7 +1072,7 @@ wait(0.15)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 65
 
-wait(1.15)
+wait(1.4)
 
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
