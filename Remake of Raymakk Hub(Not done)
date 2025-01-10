@@ -280,11 +280,11 @@ effect2.Parent = game.Players.LocalPlayer.Character.Torso
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
-wait(1.6)
+wait(1.75)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 300
 
-wait(3.25)
+wait(4)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250
 
@@ -1821,11 +1821,11 @@ playAnim:Play()
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
-wait(0.15)
+wait(0.25)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 60
 
-wait(0.60)
+wait(1.10)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
 
@@ -1861,13 +1861,15 @@ playAnim:Play()
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
-wait(0.15)
+wait(0.25)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 60
 
-wait(0.75)
+wait(1.25)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+wait(0.15)
 
 playAnim:Stop()
 
@@ -1877,7 +1879,7 @@ anim.AnimationId = "rbxassetid://13047366862"
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 
-wait(0.5)
+wait(0.75)
 
 playAnim:Stop()
 
@@ -1907,15 +1909,15 @@ playAnim:Play()
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
-wait(0.1)
+wait(0.25)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250
 
-wait(0.35)
+wait(0.85)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
 
-wait(0.05)
+wait(0.1)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 125
 
@@ -1944,11 +1946,11 @@ playAnim:Play()
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
-wait(0.1)
+wait(0.25)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250
 
-wait(0.35)
+wait(0.85)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
@@ -1958,7 +1960,7 @@ anim.AnimationId = "rbxassetid://12830917034"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
-wait(0.75)
+wait(1.25)
 playAnim:Stop()
 local anim = Instance.new("Animation")
 anim.AnimationId = "rbxassetid://12832023590"
