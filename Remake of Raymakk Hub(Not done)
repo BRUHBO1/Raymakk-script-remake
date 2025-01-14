@@ -2081,7 +2081,7 @@ end)
 
 local Tab = Window:NewTab("Misc")
 local Section = Tab:NewSection("Other things")
-Section:NewButton("Nameless admin", "Admin", function()
+Section:NewButton("Nameless admin", "Not my script", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -2089,6 +2089,16 @@ local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+end)
+
+Section:NewButton("Jerk off", "Not my script", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BRUHBO1/Raymakk-script/refs/heads/main/jerk%20off'))()
 end)
 local Tab = Window:NewTab("settings")
 local Section = Tab:NewSection("toggle ui")
