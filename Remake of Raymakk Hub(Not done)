@@ -2113,7 +2113,7 @@ getgenv().Moveset_Settings = {
     ["UltNames"] = {
         "20 SERIES",
         "COME AT ME THEN",
-        "I'M DONE WWITH THIS",
+        "I'M DONE WITH THIS",
     },
 
     ["MoveNames"] = {
