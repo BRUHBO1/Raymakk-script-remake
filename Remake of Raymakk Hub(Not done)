@@ -2093,7 +2093,7 @@ getgenv().Moveset_Settings = {
 
     ["TSBStyleNotification"] = true, --// If true, uses the TSB notification when you spawn in with KJ
 
-    ["UseOldCollateralRuin"] = true, --// If true, uses the old Collateral Ruin VFX and SFX
+    ["UseOldCollateralRuin"] = false, --// If true, uses the old Collateral Ruin VFX and SFX
 
     ["NoWarning"] = true, --// If true, removes the warning that appears when you're not on Saitama
     ["NoDeathCounterImages"] = false, --// If true, will disable the images that appear in death counter slap
@@ -2144,7 +2144,7 @@ getgenv().Moveset_Settings = {
 
     ["TSBStyleNotification"] = true, --// If true, uses the TSB notification when you spawn in with KJ
 
-    ["UseOldCollateralRuin"] = true, --// If true, uses the old Collateral Ruin VFX and SFX
+    ["UseOldCollateralRuin"] = false, --// If true, uses the old Collateral Ruin VFX and SFX
 
     ["NoWarning"] = true, --// If true, removes the warning that appears when you're not on Saitama
     ["NoDeathCounterImages"] = false, --// If true, will disable the images that appear in death counter slap
