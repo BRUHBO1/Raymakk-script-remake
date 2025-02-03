@@ -2081,7 +2081,7 @@ end)
 
 local Tab = Window:NewTab("Costume Char")
 local Section = Tab:NewSection("Characters")
-Section:NewButton("KadeJ", "Use Saitama (made by i.am.an.agent)", function()
+Section:NewButton("KadeJ bannable", "Use Saitama (made by i.am.an.agent)", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -2132,7 +2132,7 @@ getgenv().Moveset_Settings = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToKJ/refs/heads/main/Latest.lua"))()
 end)
 
-Section:NewButton("KadeJ (auto respawn execute)", "Use Saitama (made by i.am.an.agent)", function()
+Section:NewButton("KadeJ bannable (auto respawn execute)", "Use Saitama (made by i.am.an.agent)", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
