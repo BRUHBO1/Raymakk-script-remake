@@ -2098,33 +2098,33 @@ getgenv().Moveset_Settings = {
     ["NoWarning"] = true, --// If true, removes the warning that appears when you're not on Saitama
     ["NoDeathCounterImages"] = false, --// If true, will disable the images that appear in death counter slap
     ["NoBarrageArms"] = true, --// If true, will destroy the barrage arms that appear when you use consecutive punch
-    ["NoPreysPerilAttract"] = true, --// If true, preys peril will not be able to attract you.
+    ["NoPreysPerilAttract"] = false, --// If true, preys peril will not be able to attract you.
     ["NoWalls"] = false,
     ["NoTrees"] = false,
 
     ["RavageTool"] = true,
     ["AdrenalineBoostTool"] = true,
-    ["Adrenaline_Multiplier"] = 3, --// how much adrenaline multiplies your speed by
+    ["Adrenaline_Multiplier"] = 5, --// how much adrenaline multiplies your speed by
 
-    ["CustomUppercutAnimation"] = true,
-    ["CustomDownslamAnimation"] = true,
-    ["CustomIdleAnimation"] = true,
+    ["CustomUppercutAnimation"] = false,
+    ["CustomDownslamAnimation"] = false,
+    ["CustomIdleAnimation"] = false,
 
     ["UltNames"] = {
         "20 SERIES",
         "COME AT ME THEN",
-        "I'M DONE WITH THIS",
+        "I'M DONE",
     },
 
     ["MoveNames"] = {
         ["Normal Punch"] = "Ravaging Kick",
-        ["Consecutive Punches"] = "Fist Fusillade",
+        ["Consecutive Punches"] = "Ravaging Fists",
         ["Shove"] = "Swift Sweep",
         ["Uppercut"] = "Collateral Storm",
 
-        ["Death Counter"] = "Sudden Strike",
+        ["Death Counter"] = "Slap Counter",
         ["Table Flip"] = "Stoic Bomb",
-        ["Serious Punch"] = "Destructive Power",
+        ["Serious Punch"] = "Unlimited Power",
         ["Omni Directional Punch"] = "Omni Directional Fists"
     },
 }
@@ -2149,33 +2149,33 @@ getgenv().Moveset_Settings = {
     ["NoWarning"] = true, --// If true, removes the warning that appears when you're not on Saitama
     ["NoDeathCounterImages"] = false, --// If true, will disable the images that appear in death counter slap
     ["NoBarrageArms"] = true, --// If true, will destroy the barrage arms that appear when you use consecutive punch
-    ["NoPreysPerilAttract"] = true, --// If true, preys peril will not be able to attract you.
+    ["NoPreysPerilAttract"] = false, --// If true, preys peril will not be able to attract you.
     ["NoWalls"] = false,
     ["NoTrees"] = false,
 
     ["RavageTool"] = true,
     ["AdrenalineBoostTool"] = true,
-    ["Adrenaline_Multiplier"] = 3, --// how much adrenaline multiplies your speed by
+    ["Adrenaline_Multiplier"] = 5, --// how much adrenaline multiplies your speed by
 
-    ["CustomUppercutAnimation"] = true,
-    ["CustomDownslamAnimation"] = true,
-    ["CustomIdleAnimation"] = true,
+    ["CustomUppercutAnimation"] = false,
+    ["CustomDownslamAnimation"] = false,
+    ["CustomIdleAnimation"] = false,
 
     ["UltNames"] = {
         "20 SERIES",
         "COME AT ME THEN",
-        "I'M DONE WITH THIS",
+        "I'M DONE",
     },
 
     ["MoveNames"] = {
         ["Normal Punch"] = "Ravaging Kick",
-        ["Consecutive Punches"] = "Fist Fusillade",
+        ["Consecutive Punches"] = "Ravaging Fists",
         ["Shove"] = "Swift Sweep",
         ["Uppercut"] = "Collateral Storm",
 
-        ["Death Counter"] = "Sudden Strike",
+        ["Death Counter"] = "Slap Counter",
         ["Table Flip"] = "Stoic Bomb",
-        ["Serious Punch"] = "Destructive Power",
+        ["Serious Punch"] = "Unlimited Power",
         ["Omni Directional Punch"] = "Omni Directional Fists"
     },
 }
