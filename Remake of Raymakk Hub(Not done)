@@ -337,6 +337,20 @@ soundeffect:Play()
 soundeffect.Volume = 1
 end)
 
+Section:NewButton("Dropkick Victim", "Kick", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://17363256069"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
 Section:NewButton("5 Season", "PUNCH", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
@@ -360,6 +374,36 @@ local UserInputService = game:GetService("UserInputService")
 
 local anim = Instance.new("Animation")
 anim.AnimationId = "rbxassetid://77727115892579"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
+local Tab = Window:NewTab("Weakest")
+local Section = Tab:NewSection("Dummy")
+Section:NewButton("Fight back victim", "DUMMY IS MY POOKIE!", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://18440398084"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
+Section:NewButton("Fight Back", "I AM PUNCHING MY LIL BRO", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://18440406788"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
@@ -730,7 +774,47 @@ anim.AnimationId = "rbxassetid://106755459092436"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
-wait(1)
+
+wait(0.5)
+
+playAnim:AdjustSpeed(0.9)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.8)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.6)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.3)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.05)
+
+wait(1.5)
+
+playAnim:AdjustSpeed(0.2)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.3)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.5)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.7)
+
+wait(0.75)
+
+playAnim:AdjustSpeed(0.1)
+
 playAnim:Stop()
 local anim = Instance.new("Animation")
 anim.AnimationId = "rbxassetid://132259592388175"
@@ -777,7 +861,47 @@ anim.AnimationId = "rbxassetid://106755459092436"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
-wait(1)
+
+wait(0.5)
+
+playAnim:AdjustSpeed(0.9)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.8)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.6)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.3)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.05)
+
+wait(1.5)
+
+playAnim:AdjustSpeed(0.2)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.3)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.5)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.7)
+
+wait(0.75)
+
+playAnim:AdjustSpeed(0.1)
+
 playAnim:Stop()
 local anim = Instance.new("Animation")
 anim.AnimationId = "rbxassetid://132259592388175"
@@ -1676,14 +1800,15 @@ anim.AnimationId = "rbxassetid://12502664044"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
+playAnim:AdjustSpeed(1.5)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
-wait(0.25)
+wait(0.1)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
 
-wait(0.75)
+wait(0.5)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 5
 
@@ -1710,14 +1835,15 @@ anim.AnimationId = "rbxassetid://12502664044"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
+playAnim:AdjustSpeed(1.5)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
-wait(0.25)
+wait(0.1)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
 
-wait(0.75)
+wait(0.5)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 5
 
@@ -2013,9 +2139,9 @@ local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 end)
 
-local Tab = Window:NewTab("Jk BG")
-local Section = Tab:NewSection("JK")
-Section:NewButton("Jk hit", "JK", function()
+local Tab = Window:NewTab("Sonic")
+local Section = Tab:NewSection("Sonic")
+Section:NewButton("Spawn", "ooo", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -2023,20 +2149,62 @@ local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
 local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://120417013765697"
+anim.AnimationId = "rbxassetid://15957361339"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
-wait(0.9)
+end)
+
+Section:NewButton("Flash Strike", "Sonic boom", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13376869471"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
+Section:NewButton("Whirlwind Kick", "Sonic bonk", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13294790250"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
+Section:NewButton("Whirlwind Kick Finisher", "Sonic bonk and run", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13294790250"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+wait(1)
 playAnim:Stop()
 local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://94657532571620"
+anim.AnimationId = "rbxassetid://76530443909428 "
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 end)
 
-Section:NewButton("Jk hit you", "JK bonk", function()
+Section:NewButton("Explosive Shuriken", "Sonic pew", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -2044,14 +2212,13 @@ local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
 local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://130336107425903"
+anim.AnimationId = "rbxassetid://13501296372"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 end)
 
-local Section = Tab:NewSection("Jun")
-Section:NewButton("Jun", "Jun", function()
+Section:NewButton("Explosive Shuriken air variant", "Sonic pew", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -2059,13 +2226,13 @@ local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
 local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://120198948683088"
+anim.AnimationId = "rbxassetid://13556985475"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 end)
 
-Section:NewButton("Jun hit", "Jun", function()
+Section:NewButton("Wall Combo", "Sonic SHING SHING SHING SHING!", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -2073,136 +2240,269 @@ local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
 local anim = Instance.new("Animation")
-anim.AnimationId = "rbxassetid://77761278784917"
+anim.AnimationId = "rbxassetid://16023456135"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 end)
 
-local Tab = Window:NewTab("Costume Char")
-local Section = Tab:NewSection("Characters")
-Section:NewButton("KadeJ bannable", "Use Saitama (made by i.am.an.agent)", function()
+Section:NewButton("Wall Combo Victim", "SONIC STOP", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
 local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
-getgenv().Moveset_Settings = {
-    ["ExecuteOnRespawn"] = false, --// If true, the moveset will load everytime you respawn
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://16023171958"
 
-    ["TSBStyleNotification"] = true, --// If true, uses the TSB notification when you spawn in with KJ
-
-    ["UseOldCollateralRuin"] = false, --// If true, uses the old Collateral Ruin VFX and SFX
-
-    ["NoWarning"] = true, --// If true, removes the warning that appears when you're not on Saitama
-    ["NoDeathCounterImages"] = false, --// If true, will disable the images that appear in death counter slap
-    ["NoBarrageArms"] = true, --// If true, will destroy the barrage arms that appear when you use consecutive punch
-    ["NoPreysPerilAttract"] = false, --// If true, preys peril will not be able to attract you.
-    ["NoWalls"] = false,
-    ["NoTrees"] = false,
-
-    ["RavageTool"] = true,
-    ["AdrenalineBoostTool"] = true,
-    ["Adrenaline_Multiplier"] = 5, --// how much adrenaline multiplies your speed by
-
-    ["CustomUppercutAnimation"] = false,
-    ["CustomDownslamAnimation"] = false,
-    ["CustomIdleAnimation"] = false,
-
-    ["UltNames"] = {
-        "20 SERIES",
-        "COME AT ME THEN",
-        "I'M DONE",
-    },
-
-    ["MoveNames"] = {
-        ["Normal Punch"] = "Ravaging Kick",
-        ["Consecutive Punches"] = "Ravaging Fists",
-        ["Shove"] = "Swift Sweep",
-        ["Uppercut"] = "Collateral Storm",
-
-        ["Death Counter"] = "Slap Counter",
-        ["Table Flip"] = "Stoic Bomb",
-        ["Serious Punch"] = "Unlimited Power",
-        ["Omni Directional Punch"] = "Omni Directional Fists"
-    },
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToKJ/refs/heads/main/Latest.lua"))()
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
 end)
 
-Section:NewButton("KadeJ bannable (auto respawn execute)", "Use Saitama (made by i.am.an.agent)", function()
+local Section = Tab:NewSection("Sonic Ult")
+Section:NewButton("CAN YOU EVEN SEE ME?", "fast", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
 local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
-getgenv().Moveset_Settings = {
-    ["ExecuteOnRespawn"] = true, --// If true, the moveset will load everytime you respawn
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13499771836"
 
-    ["TSBStyleNotification"] = true, --// If true, uses the TSB notification when you spawn in with KJ
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+wait(2.5)
+playAnim:Stop()
+wait(1.75)
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13497875049"
 
-    ["UseOldCollateralRuin"] = false, --// If true, uses the old Collateral Ruin VFX and SFX
-
-    ["NoWarning"] = true, --// If true, removes the warning that appears when you're not on Saitama
-    ["NoDeathCounterImages"] = false, --// If true, will disable the images that appear in death counter slap
-    ["NoBarrageArms"] = true, --// If true, will destroy the barrage arms that appear when you use consecutive punch
-    ["NoPreysPerilAttract"] = false, --// If true, preys peril will not be able to attract you.
-    ["NoWalls"] = false,
-    ["NoTrees"] = false,
-
-    ["RavageTool"] = true,
-    ["AdrenalineBoostTool"] = true,
-    ["Adrenaline_Multiplier"] = 5, --// how much adrenaline multiplies your speed by
-
-    ["CustomUppercutAnimation"] = false,
-    ["CustomDownslamAnimation"] = false,
-    ["CustomIdleAnimation"] = false,
-
-    ["UltNames"] = {
-        "20 SERIES",
-        "COME AT ME THEN",
-        "I'M DONE",
-    },
-
-    ["MoveNames"] = {
-        ["Normal Punch"] = "Ravaging Kick",
-        ["Consecutive Punches"] = "Ravaging Fists",
-        ["Shove"] = "Swift Sweep",
-        ["Uppercut"] = "Collateral Storm",
-
-        ["Death Counter"] = "Slap Counter",
-        ["Table Flip"] = "Stoic Bomb",
-        ["Serious Punch"] = "Unlimited Power",
-        ["Omni Directional Punch"] = "Omni Directional Fists"
-    },
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToKJ/refs/heads/main/Latest.lua"))()
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
 end)
 
-local Tab = Window:NewTab("Misc")
-local Section = Tab:NewSection("Other things")
-Section:NewButton("Nameless admin", "Not my script", function()
+Section:NewButton("Twinblade Rush miss", "RUN", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
 local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13632347366"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+wait(0.1)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+wait(1)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
 
-Section:NewButton("Jerk off", "Not my script", function()
+Section:NewButton("Twinblade Rush", "Flash", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
 local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/BRUHBO1/Raymakk-script/refs/heads/main/jerk%20off'))()
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13632347366"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(0.1)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+
+wait(0.5)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+playAnim:Stop()
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13633468484"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(5)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+Section:NewButton("Straight On", "Wooho", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13643152947"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(0.1)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 75
+
+wait(1.5)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+
+wait(0.25)
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13634395775"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(0.3)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 75
+
+wait(2)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+playAnim:Stop()
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13639700348"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(0.5)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+Section:NewButton("Canarge", "BOOM", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13723174078"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
+Section:NewButton("Fourfold Flashstrike", "DAMN", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13881335713"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(0.75)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 350
+
+wait(0.15)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13876406148"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(1.25)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+local Tab = Window:NewTab("Gojo")
+local Section = Tab:NewSection("Sorccer")
+Section:NewButton("Red", "OW", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13073745835"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
+Section:NewButton("Blue", "Aa", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://15125307874"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+wait(1)
+playAnim:Stop()
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://15121659862"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
+Section:NewButton("HOLLOW PURPLE", "GO PURPLE GO!", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13071982935"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+end)
+
+Section:NewButton("Beatdown", "OUCH", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://13560306510"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+playAnim:AdjustSpeed(1.5)
 end)
 local Tab = Window:NewTab("settings")
 local Section = Tab:NewSection("toggle ui")
