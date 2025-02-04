@@ -1,0 +1,132 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("no place left so another one", "DarkTheme")
+local Tab = Window:NewTab("Costume Char")
+local Section = Tab:NewSection("Characters")
+Section:NewButton("KadeJ bannable", "Use Saitama (made by i.am.an.agent)", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+getgenv().Moveset_Settings = {
+    ["ExecuteOnRespawn"] = false, --// If true, the moveset will load everytime you respawn
+
+    ["TSBStyleNotification"] = true, --// If true, uses the TSB notification when you spawn in with KJ
+
+    ["UseOldCollateralRuin"] = false, --// If true, uses the old Collateral Ruin VFX and SFX
+
+    ["NoWarning"] = true, --// If true, removes the warning that appears when you're not on Saitama
+    ["NoDeathCounterImages"] = false, --// If true, will disable the images that appear in death counter slap
+    ["NoBarrageArms"] = true, --// If true, will destroy the barrage arms that appear when you use consecutive punch
+    ["NoPreysPerilAttract"] = false, --// If true, preys peril will not be able to attract you.
+    ["NoWalls"] = false,
+    ["NoTrees"] = false,
+
+    ["RavageTool"] = true,
+    ["AdrenalineBoostTool"] = true,
+    ["Adrenaline_Multiplier"] = 5, --// how much adrenaline multiplies your speed by
+
+    ["CustomUppercutAnimation"] = false,
+    ["CustomDownslamAnimation"] = false,
+    ["CustomIdleAnimation"] = false,
+
+    ["UltNames"] = {
+        "20 SERIES",
+        "COME AT ME THEN",
+        "I'M DONE",
+    },
+
+    ["MoveNames"] = {
+        ["Normal Punch"] = "Ravaging Kick",
+        ["Consecutive Punches"] = "Ravaging Fists",
+        ["Shove"] = "Swift Sweep",
+        ["Uppercut"] = "Collateral Storm",
+
+        ["Death Counter"] = "Slap Counter",
+        ["Table Flip"] = "Stoic Bomb",
+        ["Serious Punch"] = "Unlimited Power",
+        ["Omni Directional Punch"] = "Omni Directional Fists"
+    },
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToKJ/refs/heads/main/Latest.lua"))()
+end)
+
+Section:NewButton("KadeJ bannable (auto respawn execute)", "Use Saitama (made by i.am.an.agent)", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+getgenv().Moveset_Settings = {
+    ["ExecuteOnRespawn"] = true, --// If true, the moveset will load everytime you respawn
+
+    ["TSBStyleNotification"] = true, --// If true, uses the TSB notification when you spawn in with KJ
+
+    ["UseOldCollateralRuin"] = false, --// If true, uses the old Collateral Ruin VFX and SFX
+
+    ["NoWarning"] = true, --// If true, removes the warning that appears when you're not on Saitama
+    ["NoDeathCounterImages"] = false, --// If true, will disable the images that appear in death counter slap
+    ["NoBarrageArms"] = true, --// If true, will destroy the barrage arms that appear when you use consecutive punch
+    ["NoPreysPerilAttract"] = false, --// If true, preys peril will not be able to attract you.
+    ["NoWalls"] = false,
+    ["NoTrees"] = false,
+
+    ["RavageTool"] = true,
+    ["AdrenalineBoostTool"] = true,
+    ["Adrenaline_Multiplier"] = 5, --// how much adrenaline multiplies your speed by
+
+    ["CustomUppercutAnimation"] = false,
+    ["CustomDownslamAnimation"] = false,
+    ["CustomIdleAnimation"] = false,
+
+    ["UltNames"] = {
+        "20 SERIES",
+        "COME AT ME THEN",
+        "I'M DONE",
+    },
+
+    ["MoveNames"] = {
+        ["Normal Punch"] = "Ravaging Kick",
+        ["Consecutive Punches"] = "Ravaging Fists",
+        ["Shove"] = "Swift Sweep",
+        ["Uppercut"] = "Collateral Storm",
+
+        ["Death Counter"] = "Slap Counter",
+        ["Table Flip"] = "Stoic Bomb",
+        ["Serious Punch"] = "Unlimited Power",
+        ["Omni Directional Punch"] = "Omni Directional Fists"
+    },
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToKJ/refs/heads/main/Latest.lua"))()
+end)
+
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Other things")
+Section:NewButton("Nameless admin", "Not my script", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+end)
+
+Section:NewButton("Jerk off", "Not my script", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BRUHBO1/Raymakk-script/refs/heads/main/jerk%20off'))()
+end)
+local Tab = Window:NewTab("settings")
+local Section = Tab:NewSection("toggle ui")
+Section:NewKeybind("Key E", "F", Enum.KeyCode.E, function()
+	Library:ToggleUI()
+end)
