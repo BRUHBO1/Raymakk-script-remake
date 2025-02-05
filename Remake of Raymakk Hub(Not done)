@@ -1085,6 +1085,31 @@ anim.AnimationId = "rbxassetid://11343318134"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
+playAnim:AdjustSpeed(0.01)
+
+wait(5)
+
+playAnim:AdjustSpeed(0.1)
+
+wait(0.1)
+
+playAnim:AdjustSpeed(0.2)
+
+wait(0.1)
+
+playAnim:AdjustSpeed(0.4)
+
+wait(0.1)
+
+playAnim:AdjustSpeed(0.6)
+
+wait(0.1)
+
+playAnim:AdjustSpeed(0.9)
+
+wait(0.1)
+
+playAnim:AdjustSpeed(1)
 end)
 
 Section:NewButton("Table Flip", "Flip", function()
@@ -2195,7 +2220,7 @@ anim.AnimationId = "rbxassetid://13294790250"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
-wait(1)
+wait(0.9)
 playAnim:Stop()
 local anim = Instance.new("Animation")
 anim.AnimationId = "rbxassetid://76530443909428 "
