@@ -735,7 +735,27 @@ wait(2.5)
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 end)
 
-Section:NewButton("Earth Splitting Strike", "Slash", function()
+Section:NewButton("Earth Splitting Strike miss", "UH OH", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://18897119503"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(1.25)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+Section:NewButton("Earth Splitting Strike", "ONE.INCH.KILLER.PUNCH", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -758,6 +778,20 @@ local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+Section:NewButton("Earth Spiltting Strike Victim", "OW", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://116152673970658"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
 end)
 
 Section:NewButton("Last Breath", "Bonk", function()
@@ -1626,8 +1660,9 @@ anim.AnimationId = "rbxassetid://13630786846"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
+playAnim:AdjustSpeed(1.25)
 
-wait(0.75)
+wait(0.5)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
 
@@ -1664,8 +1699,9 @@ anim.AnimationId = "rbxassetid://13630786846"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
+playAnim:AdjustSpeed(1.25)
 
-wait(0.75)
+wait(0.5)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
 
