@@ -32,9 +32,9 @@ getgenv().Moveset_Settings = {
     ["CustomIdleAnimation"] = false,
 
     ["UltNames"] = {
-        "20 SERIES",
-        "COME AT ME THEN",
-        "I'M DONE",
+        "10 SERIES",
+        "COME AT ME BEFORE",
+        "I'M NOT DONE",
     },
 
     ["MoveNames"] = {
@@ -83,9 +83,9 @@ getgenv().Moveset_Settings = {
     ["CustomIdleAnimation"] = false,
 
     ["UltNames"] = {
-        "20 SERIES",
-        "COME AT ME THEN",
-        "I'M DONE",
+        "10 SERIES",
+        "COME AT ME BEFORE",
+        "I'M NOT DONE",
     },
 
     ["MoveNames"] = {
