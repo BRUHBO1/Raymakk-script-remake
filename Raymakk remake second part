@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("no place left so another one", "DarkTheme")
 local Tab = Window:NewTab("Costume Char")
 local Section = Tab:NewSection("Characters")
-Section:NewButton("KadeJ bannable", "Use Saitama (made by i.am.an.agent)", function()
+Section:NewButton("JedaK bannable", "Use Saitama (made by i.am.an.agent)", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -38,14 +38,14 @@ getgenv().Moveset_Settings = {
     },
 
     ["MoveNames"] = {
-        ["Normal Punch"] = "Ravaging Kick",
-        ["Consecutive Punches"] = "Ravaging Fists",
-        ["Shove"] = "Swift Sweep",
-        ["Uppercut"] = "Collateral Storm",
+        ["Normal Punch"] = "Spin Kick",
+        ["Consecutive Punches"] = "Quick Fists",
+        ["Shove"] = "Only Sweep",
+        ["Uppercut"] = "Collateral Lighting",
 
         ["Death Counter"] = "Slap Counter",
-        ["Table Flip"] = "Stoic Bomb",
-        ["Serious Punch"] = "Unlimited Power",
+        ["Table Flip"] = "Flying Bomb",
+        ["Serious Punch"] = "Whatever It Works",
         ["Omni Directional Punch"] = "Omni Directional Fists"
     },
 }
@@ -53,7 +53,7 @@ getgenv().Moveset_Settings = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToKJ/refs/heads/main/Latest.lua"))()
 end)
 
-Section:NewButton("KadeJ bannable (auto respawn execute)", "Use Saitama (made by i.am.an.agent)", function()
+Section:NewButton("JedaK bannable (auto respawn execute)", "Use Saitama (made by i.am.an.agent)", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
@@ -89,15 +89,15 @@ getgenv().Moveset_Settings = {
     },
 
     ["MoveNames"] = {
-        ["Normal Punch"] = "Ravaging Kick",
-        ["Consecutive Punches"] = "Ravaging Fists",
+        ["Normal Punch"] = "Spin Kick",
+        ["Consecutive Punches"] = "Quick Fists",
         ["Shove"] = "Swift Sweep",
-        ["Uppercut"] = "Collateral Storm",
+        ["Uppercut"] = "Collateral Lighting",
 
         ["Death Counter"] = "Slap Counter",
-        ["Table Flip"] = "Stoic Bomb",
-        ["Serious Punch"] = "Unlimited Power",
-        ["Omni Directional Punch"] = "Omni Directional Fists"
+        ["Table Flip"] = "Flying Bomb",
+        ["Serious Punch"] = "Whatever It Works",
+        ["Omni Directional Punch"] = "Omni Seasons"
     },
 }
 
