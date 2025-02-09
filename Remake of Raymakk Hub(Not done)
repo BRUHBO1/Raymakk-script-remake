@@ -638,20 +638,6 @@ soundeffect:Play()
 soundeffect.Volume = 1
 end)
 
-Section:NewButton("Test", "e", function()
-local player = game.Players.LocalPlayer
-repeat wait() until player.Character.Humanoid
-local humanoid = player.Character.Humanoid
-local character = player.Character or player.CharacterAdded:Wait()
-local UserInputService = game:GetService("UserInputService")
-
-local soundeffect = Instance.new("Sound")
-soundeffect.SoundId = "rbxassetid://17419337758"
-soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
-soundeffect:Play()
-soundeffect.Volume = 1
-end)
-
 local Tab = Window:NewTab("Weakest")
 local Section = Tab:NewSection("Dummy")
 Section:NewButton("Fight back victim", "DUMMY IS MY POOKIE!", function()
