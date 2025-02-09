@@ -457,7 +457,7 @@ wait(1.75)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 300
 
-wait(0.05)
+wait(4)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250
 
@@ -582,56 +582,6 @@ anim.AnimationId = "rbxassetid://17363256069"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
-
-local soundeffect = Instance.new("Sound")
-soundeffect.SoundId = "rbxassetid://17363383992"
-soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
-soundeffect:Play()
-soundeffect.Volume = 1
-
-local soundeffect = Instance.new("Sound")
-soundeffect.SoundId = "rbxassetid://17363374089"
-soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
-soundeffect:Play()
-soundeffect.Volume = 1
-
-local soundeffect = Instance.new("Sound")
-soundeffect.SoundId = "rbxassetid://17363377920"
-soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
-soundeffect:Play()
-soundeffect.Volume = 1
-
-wait(0.1)
-
-local soundeffect = Instance.new("Sound")
-soundeffect.SoundId = "rbxassetid://17430017289"
-soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
-soundeffect:Play()
-soundeffect.Volume = 1
-
-wait(4.4)
-
-local soundeffect = Instance.new("Sound")
-soundeffect.SoundId = "rbxassetid://17419337758"
-soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
-soundeffect:Play()
-soundeffect.Volume = 1
-
-wait(10)
-
-local soundeffect = Instance.new("Sound")
-soundeffect.SoundId = "rbxassetid://17420207822"
-soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
-soundeffect:Play()
-soundeffect.Volume = 1
-
-wait(0.1)
-
-local soundeffect = Instance.new("Sound")
-soundeffect.SoundId = "rbxassetid://17429102979"
-soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
-soundeffect:Play()
-soundeffect.Volume = 1
 end)
 
 Section:NewButton("5 Season", "PUNCH", function()
