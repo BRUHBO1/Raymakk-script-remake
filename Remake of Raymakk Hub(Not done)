@@ -1971,13 +1971,13 @@ playAnim:Play()
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
-wait(0.5)
+wait(0.75)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
 
 playAnim:AdjustSpeed(0)
 
-wait(2)
+wait(1)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
@@ -2003,13 +2003,13 @@ playAnim:Play()
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
-wait(0.5)
+wait(0.75)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
 
 playAnim:AdjustSpeed(0)
 
-wait(1.5)
+wait(0.5)
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
 
