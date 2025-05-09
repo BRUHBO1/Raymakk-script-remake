@@ -178,7 +178,7 @@ playAnim:Play()
 
 wait(1.15)
 
-playAnim:AdjustSpeed(0)
+playAnim:AdjustSpeed(0.4)
 
 local soundeffect = Instance.new("Sound")
 soundeffect.SoundId = "rbxassetid://17325675161"
@@ -200,7 +200,7 @@ soundeffect.Volume = 1
 
 wait(0.5)
 
-playAnim:AdjustSpeed(1)
+playAnim:AdjustSpeed(1.25)
 
 local soundeffect = Instance.new("Sound")
 soundeffect.SoundId = "rbxassetid://72000489811842"
