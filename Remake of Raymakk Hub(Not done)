@@ -688,6 +688,103 @@ soundeffect:Play()
 soundeffect.Volume = 2
 end)
 
+Section:NewButton("Last Breath to Dropkick", "AYO-", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://106755459092436"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+
+wait(0.5)
+
+playAnim:AdjustSpeed(0.9)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.8)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.6)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.3)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.05)
+
+wait(1.5)
+
+playAnim:AdjustSpeed(0.2)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.3)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.5)
+
+wait(0.05)
+
+playAnim:AdjustSpeed(0.7)
+
+wait(0.75)
+
+playAnim:AdjustSpeed(0.1)
+
+playAnim:Stop()
+
+local soundeffect = Instance.new("Sound")
+soundeffect.SoundId = "rbxassetid://17356346310"
+soundeffect.Parent = game.Workspace.Camera
+soundeffect:Play()
+soundeffect.Volume = 1
+soundeffect.TimePosition = 1.75
+
+local soundeffect = Instance.new("Sound")
+soundeffect.SoundId = "rbxassetid://17429233290"
+soundeffect.Parent = game.Players.LocalPlayer.Character.Torso
+soundeffect:Play()
+soundeffect.Volume = 1
+soundeffect.TimePosition = 1.75
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://17354976067"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+playAnim.TimePosition = 1.75
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 300
+
+wait(4)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250
+
+wait(0.05)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 125
+
+wait(0.05)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+
+wait(0.05)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
 local Tab = Window:NewTab("Weakest")
 local Section = Tab:NewSection("Dummy")
 Section:NewButton("Fight back victim", "DUMMY IS MY POOKIE!", function()
@@ -2918,6 +3015,11 @@ anim.AnimationId = "rbxassetid://13560306510"
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 playAnim:AdjustSpeed(1.5)
+end)
+local Tab = Window:NewTab("settings")
+local Section = Tab:NewSection("toggle ui")
+Section:NewKeybind("Key E", "F", Enum.KeyCode.E, function()
+	Library:ToggleUI()
 end)
 local Tab = Window:NewTab("settings")
 local Section = Tab:NewSection("toggle ui")
