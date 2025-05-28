@@ -2975,17 +2975,25 @@ local character = player.Character or player.CharacterAdded:Wait()
 local UserInputService = game:GetService("UserInputService")
 
 local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://15121659862"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+wait(1.5)
+playAnim:Stop()
+local anim = Instance.new("Animation")
 anim.AnimationId = "rbxassetid://15125307874"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
-wait(1)
+wait(5)
 playAnim:Stop()
 local anim = Instance.new("Animation")
 anim.AnimationId = "rbxassetid://15121659862"
 
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
+playAnim.TimePosition = 1.5
 end)
 
 Section:NewButton("HOLLOW PURPLE", "GO PURPLE GO!", function()
@@ -3015,6 +3023,8 @@ anim.AnimationId = "rbxassetid://13560306510"
 local playAnim = humanoid:LoadAnimation(anim)
 playAnim:Play()
 playAnim:AdjustSpeed(1.5)
+wait(2)
+playAnim:AdjustSpeed(1)
 end)
 local Tab = Window:NewTab("settings")
 local Section = Tab:NewSection("toggle ui")
